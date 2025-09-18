@@ -6,10 +6,6 @@ const linkClass = ({ isActive }) =>
 export default function Navbar() {
   return (
     <nav className="nav">
-      <div className="logo">
-        {/* simple logo placeholder */}
-        <span className="logo-mark">QN</span> Portfolio
-      </div>
 
       <div className="links">
         <NavLink to="/" className={linkClass} end>Home</NavLink>
