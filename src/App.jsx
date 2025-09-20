@@ -6,7 +6,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Education from './pages/Education';
 import Contact from './pages/Contact';
-import Skills from './pages/Skills';          
+import Services from './pages/Services';          
 
 export default function App() {
   return (
@@ -18,7 +18,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/education" element={<Education />} />
-          <Route path="/skills" element={<Skills />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

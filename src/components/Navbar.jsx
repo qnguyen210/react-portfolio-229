@@ -12,7 +12,7 @@ export default function Navbar() {
         <NavLink to="/about" className={linkClass}>About</NavLink>
         <NavLink to="/projects" className={linkClass}>Projects</NavLink>
         <NavLink to="/education" className={linkClass}>Education</NavLink>
-        <NavLink to="/skills" className={linkClass}>Skills</NavLink>
+        <NavLink to="/services" className={linkClass}>Services</NavLink>
         <NavLink to="/contact" className={linkClass}>Contact</NavLink>
       </div>
     </nav>
