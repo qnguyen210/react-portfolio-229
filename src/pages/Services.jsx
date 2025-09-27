@@ -1,27 +1,34 @@
 export default function Services() {
-  const services = [
-    { group: "Front-End", items: ["React", "React Router", "Vite", "HTML", "CSS", "Responsive UI"] },
-    { group: "Back-End", items: ["Node.js", "Express", "REST APIs", "JSON", "Auth (basic)"] },
-    { group: "Data & Tools", items: ["SQL (CRUD)", "Git/GitHub", "npm", "Postman"] },
-  ];
-  
   return (
-    <section className="container">
-      <h1>Services</h1>
-      <p>Here are the main areas I’m comfortable with right now:</p>
+    <div>
+      <h2>Services</h2>
+      <p>
+        I combine my background in Health Informatics Technology, software
+        engineering, and business management to deliver practical solutions in
+        programming, web development, and data analysis.
+      </p>
 
-      <div className="service-groups">
-        {services.map((s) => (
-          <div key={s.group} className="service-card">
-            <h3>{s.group}</h3>
-            <div className="tags">
-              {s.items.map((t) => (
-                <span key={t} className="tag">{t}</span>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
+      <h3>Web Development</h3>
+      <img src="/images/webdev.webp" alt="Web Development" width="200" />
+      <p>
+        Building responsive websites and single-page applications with HTML,
+        CSS, JavaScript, React, Node.js, and SQL/MongoDB.
+      </p>
+
+      <h3>Data Analysis</h3>
+      <img src="/images/data_engineer.jpg" alt="Data Analysis" width="200" />
+      <p>
+        Analyzing and visualizing data using Python (NumPy, Pandas,
+        Matplotlib, Seaborn), Excel, and Tableau to generate actionable insights.
+      </p>
+
+      <h3>Programming</h3>
+      <img src="/images/programming.jpg" alt="Programming" width="200" />
+      <p>
+        Developing software solutions in Python, C#, and SQL, applying
+        object-oriented programming and system design principles.
+      </p>
+    </div>
   );
 }
+
