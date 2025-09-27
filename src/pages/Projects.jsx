@@ -7,7 +7,7 @@ export default function Projects() {
 
       {/* Project 1: Banking System */}
       <h3>Account Management System (Banking)</h3>
-      <img src="/images/banking.png" alt="Banking System Project" />
+  <img src="/images/banking.png" alt="Banking System Project" className="project-img" />
       <p>
         I built a C# banking system with checking/savings/visa accounts, user
         authentication, transaction logging, and monthly statement generation.
@@ -15,7 +15,7 @@ export default function Projects() {
 
       {/* Project 2: MedInterpreter */}
       <h3>MedInterpreter</h3>
-      <img src="/images/medinterpreter.jpg" alt="MedInterpreter App" />
+  <img src="/images/medinterpreter.jpg" alt="MedInterpreter App" className="project-img" />
       <p>
         A healthcare translation app designed with EMR integration. I worked on
         requirements, UML diagrams, and overall system architecture.
@@ -23,7 +23,7 @@ export default function Projects() {
 
       {/* Project 3: HTML Game */}
       <h3>HTML Game</h3>
-      <img src="/images/webgame.jpg" alt="HTML Game Project" />
+  <img src="/images/webgame.jpg" alt="HTML Game Project" className="project-img" />
       <p>
         A small browser game built with HTML, CSS, and JavaScript. I implemented
         DOM updates, animations, and simple game state management.
