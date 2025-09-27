@@ -1,4 +1,6 @@
+// Services page component
 export default function Services() {
+  // Renders a list of services offered with descriptions and images
   return (
     <div>
       <h2>Services</h2>
@@ -8,6 +10,7 @@ export default function Services() {
         programming, web development, and data analysis.
       </p>
 
+      {/* Web Development service */}
       <h3>Web Development</h3>
       <img src="/images/webdev.webp" alt="Web Development" width="200" />
       <p>
@@ -15,6 +18,7 @@ export default function Services() {
         CSS, JavaScript, React, Node.js, and SQL/MongoDB.
       </p>
 
+      {/* Data Analysis service */}
       <h3>Data Analysis</h3>
       <img src="/images/data_engineer.jpg" alt="Data Analysis" width="200" />
       <p>
@@ -22,6 +26,7 @@ export default function Services() {
         Matplotlib, Seaborn), Excel, and Tableau to generate actionable insights.
       </p>
 
+      {/* Programming service */}
       <h3>Programming</h3>
       <img src="/images/programming.jpg" alt="Programming" width="200" />
       <p>

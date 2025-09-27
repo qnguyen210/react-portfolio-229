@@ -1,9 +1,13 @@
+
+// Contact page component
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
+  // React Router navigation hook
   const navigate = useNavigate();
 
+  // State for form fields
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -12,17 +16,20 @@ export default function Contact() {
     message: ""
   });
 
+  // Handle input changes
   function handleChange(e) {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   }
 
+  // Handle form submission
   function handleSubmit(e) {
     e.preventDefault();
     console.log("Form submitted:", formData); // captured data
     navigate("/"); // redirect to Home
   }
 
+  // Renders contact info and a contact form
   return (
     <div>
       <h2>Contact Me</h2>
@@ -57,6 +64,7 @@ export default function Contact() {
       <section>
         <h3>Send me a message</h3>
         <form onSubmit={handleSubmit}>
+          {/* First Name field */}
           <div>
             <label>
               First Name:<br />
@@ -70,6 +78,7 @@ export default function Contact() {
             </label>
           </div>
 
+          {/* Last Name field */}
           <div>
             <label>
               Last Name:<br />
@@ -83,6 +92,7 @@ export default function Contact() {
             </label>
           </div>
 
+          {/* Contact Number field */}
           <div>
             <label>
               Contact Number:<br />
@@ -95,6 +105,7 @@ export default function Contact() {
             </label>
           </div>
 
+          {/* Email Address field */}
           <div>
             <label>
               Email Address:<br />
@@ -108,6 +119,7 @@ export default function Contact() {
             </label>
           </div>
 
+          {/* Message field */}
           <div>
             <label>
               Message:<br />

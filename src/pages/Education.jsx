@@ -1,8 +1,11 @@
+// Education page component
 export default function Education() {
+  // Renders education history, courses, and activities
   return (
     <div>
       <h2>Education</h2>
 
+      {/* Centennial College diploma */}
       <h3>Advanced Diploma of Health Informatics Technology (Co-op)</h3>
       <p>Sep 2024 – Present</p>
       <p>Centennial College, Toronto, ON — GPA: 4.3/4.5</p>
@@ -26,6 +29,7 @@ export default function Education() {
         </li>
       </ul>
 
+      {/* RMIT University degree */}
       <h3>Bachelor of Science in Business Management (Human Resources)</h3>
       <p>Aug 2017 – Oct 2022</p>
       <p>RMIT University, Hanoi, Vietnam</p>
