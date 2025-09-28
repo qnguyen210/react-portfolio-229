@@ -13,7 +13,7 @@ export default function Services() {
       <div className="services-grid">
         {/* Web Development service */}
         <div className="service-card">
-          <img src="/images/webdev.webp" alt="Web Development" className="service-img" />
+          <img src="./images/webdev.webp" alt="Web Development" className="service-img" />
           <h3>Web Development</h3>
           <p>
             Building responsive websites and single-page applications with HTML,
@@ -23,7 +23,7 @@ export default function Services() {
 
         {/* Data Analysis service */}
         <div className="service-card">
-          <img src="/images/data_engineer.jpg" alt="Data Analysis" className="service-img" />
+          <img src="./images/data_engineer.jpg" alt="Data Analysis" className="service-img" />
           <h3>Data Analysis</h3>
           <p>
             Analyzing and visualizing data using Python (NumPy, Pandas,
@@ -33,7 +33,7 @@ export default function Services() {
 
         {/* Programming service */}
         <div className="service-card">
-          <img src="/images/programming.jpg" alt="Programming" className="service-img" />
+          <img src="./images/programming.jpg" alt="Programming" className="service-img" />
           <h3>Programming</h3>
           <p>
             Developing software solutions in Python, C#, and SQL, applying

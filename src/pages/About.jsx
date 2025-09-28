@@ -16,7 +16,7 @@ export default function About() {
             </p>
             
             {/* Resume download button */}
-            <a href="/resume.pdf" download="Quinn_Nguyen_Resume.pdf" className="download-btn">
+            <a href="./resume.pdf" download="Quinn_Nguyen_Resume.pdf" className="download-btn">
                 📄 Download My Resume
             </a>
         </section>

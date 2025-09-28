@@ -8,7 +8,7 @@ export default function Education() {
       <div className="education-grid">
         {/* Centennial College diploma */}
         <div className="edu-card">
-          <img src="/images/centennialcollege_logo.jpg" alt="Centennial College Logo" className="edu-logo" />
+          <img src="./images/centennialcollege_logo.jpg" alt="Centennial College Logo" className="edu-logo" />
           <h3>Advanced Diploma of Health Informatics Technology (Co-op)</h3>
           <p className="edu-date">Sep 2024 – Present</p>
           <p className="edu-school">Centennial College, Toronto, ON — GPA: 4.3/4.5</p>
@@ -39,7 +39,7 @@ export default function Education() {
 
         {/* RMIT University degree */}
         <div className="edu-card">
-          <img src="/images/rmitlogo.jpg" alt="RMIT University Logo" className="edu-logo" />
+          <img src="./images/rmitlogo.jpg" alt="RMIT University Logo" className="edu-logo" />
           <h3>Bachelor of Science in Business Management (Human Resources)</h3>
           <p className="edu-date">Aug 2017 – Oct 2022</p>
           <p className="edu-school">RMIT University, Hanoi, Vietnam</p>
