@@ -12,10 +12,13 @@ export default function About() {
             <h2>Quinn Nguyen</h2>
             {/* Short bio */}
             <p>
-                Hello! I'm a web developer with a passion for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, and React.
+                I am a Health Informatics Technology student with project experience in full-stack development, database design, and systems analysis. Skilled in C#, Python, SQL, and user-centered design. Experienced in healthcare and business, translating technical concepts into clear solutions. Strong communicator and team leader with HR and medical interpretation background.
             </p>
+            
             {/* Resume download button */}
-            <a href='/resume.pdf' download className="btn primary">Download Resume (PDF)</a>
+            <a href="/resume.pdf" download="Quinn_Nguyen_Resume.pdf" className="download-btn">
+                📄 Download My Resume
+            </a>
         </section>
     );
 }

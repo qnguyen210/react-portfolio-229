@@ -29,86 +29,77 @@ export default function Contact() {
     navigate("/"); // redirect to Home
   }
 
-  // Renders contact info and a contact form
+  // Renders contact info and a contact form with improved styling
   return (
-    <div>
+    <div className="container">
       <h2>Contact Me</h2>
 
-      {/* Contact info panel */}
-      <section>
-        <h3>Contact Information</h3>
-        <p>
-          <strong>Email:</strong>{" "}
-          <a href="mailto:ngocquynhh21@gmail.com">ngocquynhh21@gmail.com</a>
-        </p>
-        <p>
-          <strong>Phone:</strong>{" "}
-          <a href="tel:+16473541270">(647) 354-1270</a>
-        </p>
-        <p><strong>Location:</strong> Toronto, ON</p>
-        <p>
-          <strong>LinkedIn:</strong>{" "}
-          <a href="https://www.linkedin.com/in/quinn-nguyen-22851b324/" target="_blank" rel="noreferrer">
-            linkedin.com/in/quinn-nguyen-22851b324
-          </a>
-        </p>
-        <p>
-          <strong>GitHub:</strong>{" "}
-          <a href="https://github.com/qnguyen210" target="_blank" rel="noreferrer">
-            github.com/qnguyen210
-          </a>
-        </p>
-      </section>
+      <div className="contact-layout">
+        {/* Contact info panel */}
+        <div className="contact-info-card">
+          <h3>Contact Information</h3>
+          <p>
+            <strong>Email:</strong>{" "}
+            <a href="mailto:ngocquynhh21@gmail.com">ngocquynhh21@gmail.com</a>
+          </p>
+          <p>
+            <strong>Phone:</strong>{" "}
+            <a href="tel:+16473541270">(647) 354-1270</a>
+          </p>
+          <p><strong>Location:</strong> Toronto, ON</p>
+          <p>
+            <strong>LinkedIn:</strong>{" "}
+            <a href="https://www.linkedin.com/in/quinn-nguyen-22851b324/" target="_blank" rel="noreferrer">
+              linkedin.com/in/quinn-nguyen-22851b324
+            </a>
+          </p>
+          <p>
+            <strong>GitHub:</strong>{" "}
+            <a href="https://github.com/qnguyen210" target="_blank" rel="noreferrer">
+              github.com/qnguyen210
+            </a>
+          </p>
+        </div>
 
-      {/* Interactive form */}
-      <section>
-        <h3>Send me a message</h3>
-        <form onSubmit={handleSubmit}>
-          {/* First Name field */}
-          <div>
-            <label>
-              First Name:<br />
-              <input
-                type="text"
-                name="firstName"
-                value={formData.firstName}
-                onChange={handleChange}
-                required
-              />
-            </label>
-          </div>
-
-          {/* Last Name field */}
-          <div>
-            <label>
-              Last Name:<br />
-              <input
-                type="text"
-                name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
-                required
-              />
-            </label>
-          </div>
-
-          {/* Contact Number field */}
-          <div>
-            <label>
-              Contact Number:<br />
+        {/* Interactive form */}
+        <div className="contact-form-card">
+          <h3>Send me a message</h3>
+          <form onSubmit={handleSubmit} className="contact-form">
+            <div className="form-row">
+              <div className="form-group">
+                <label>First Name</label>
+                <input
+                  type="text"
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label>Last Name</label>
+                <input
+                  type="text"
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+            </div>
+            
+            <div className="form-group">
+              <label>Contact Number</label>
               <input
                 type="tel"
                 name="contactNumber"
                 value={formData.contactNumber}
                 onChange={handleChange}
               />
-            </label>
-          </div>
+            </div>
 
-          {/* Email Address field */}
-          <div>
-            <label>
-              Email Address:<br />
+            <div className="form-group">
+              <label>Email Address</label>
               <input
                 type="email"
                 name="email"
@@ -116,25 +107,22 @@ export default function Contact() {
                 onChange={handleChange}
                 required
               />
-            </label>
-          </div>
+            </div>
 
-          {/* Message field */}
-          <div>
-            <label>
-              Message:<br />
+            <div className="form-group">
+              <label>Message</label>
               <textarea
                 name="message"
                 rows="4"
                 value={formData.message}
                 onChange={handleChange}
               />
-            </label>
-          </div>
+            </div>
 
-          <button type="submit">Send</button>
-        </form>
-      </section>
+            <button type="submit" className="btn primary">Send Message</button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 }

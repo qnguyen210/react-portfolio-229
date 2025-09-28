@@ -14,9 +14,9 @@ export default function Home() {
             <p className="tagline">
                Hi, I'm Quinn. Thanks for visiting my portfolio website. Explore my projects, services, and experience.
             </p>
-            <p className="mission">
-                Mission: build useful, human-centered software and keep learning by doing real projects.
-            </p>
+            <div className="mission-box">
+                <strong>Mission:</strong> build useful, human-centered software and keep learning by doing real projects.
+            </div>
             {/* Call-to-action buttons */}
             <div className="cta-buttons">
                 <Link to="/about" className="btn primary">About Me</Link>
